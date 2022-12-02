@@ -3,5 +3,7 @@
 @use "./typography" as *;
 
 body {
-    font-family: "AvenirNext", sans-serif;
+    font-family: "Roboto";
+    color: $primary-white;
+    font-weight: 500;
 }
