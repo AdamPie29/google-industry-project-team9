@@ -1,3 +1,4 @@
+import './SuggestionBar.scss'
 
 function SuggestionBar() {
     return(
