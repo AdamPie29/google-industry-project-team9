@@ -1,16 +1,17 @@
-import "./Homepage.scss"
+import "./Homepage2.scss"
 import Sidebar from "../../components/Sidebar/Sidebar"
 import SuggestionBar from "../../components/SuggestionBar/SuggestionBar";
 import VideoLibrary from "../../components/VideoLibrary/VideoLibrary"
 import { useState, useEffect } from 'react';
 import axios from "axios";
-import FirstModal from "../../components/FirstModal/FirstModal";
+import ModalExploreVid from "../../components/ModalExploreVid/ModalExploreVid";
 
 
-function Homepage() {
+function Homepage2() {
 
   const [show, setShow] = useState(false);
   const [videoData, setVideoData] = useState([]);
+  const [showExp1, setShowExp1] = useState(false);
 
   useEffect(()=> {
     setTimeout(function() {
@@ -29,24 +30,33 @@ function Homepage() {
       });
   }, []);
 
-  // const handleClick = (status) => {
-  //   setShow(status)
+  const handleClick = (status) => {
+    setShow(status)
+  }
+
+  const close = () => {
+    setShow(false)
+  }
+
+  // const handleClickSearch = () => {
+  //   setShowExp1(true)
   // }
 
-  // const close = () => {
-  //   setShow(false)
+  // const closeExp = () => {
+  //   setShowExp1(false)
   // }
+
 
   return (
     
     <main className="homepage">
-      <FirstModal />
+      <ModalExploreVid />
       <Sidebar />
       <div>
-        <SuggestionBar />
+        <SuggestionBar className="clear"/>
         <VideoLibrary videoData={videoData} />
       </div>
     </main>
   )
 }
-export default Homepage;
+export default Homepage2; 
