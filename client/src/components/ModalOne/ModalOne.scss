@@ -1,0 +1,40 @@
+
+.modal {
+   
+    width: 80%;
+
+    &__container--dark {
+        width: 50%;
+        background-color: #272727;
+    }
+
+    &__content-container {
+        display: flex;
+    }
+
+    &__content {
+        color: #e6e6e6;
+    }
+
+    &__button {
+        color:#272727;
+        background-color: #e6e6e6;
+        border-radius: .3125rem;
+    }
+
+    &__container--light {
+        width: 50%;
+        background-color: #e6e6e6;
+    }
+
+    &__content {
+        color: #272727;
+    }
+
+    &__button--light {
+        color: #272727;
+        background-color: #e6e6e6;
+        border: #272727 solid .125rem;
+        border-radius: .3125rem;
+    }
+}
