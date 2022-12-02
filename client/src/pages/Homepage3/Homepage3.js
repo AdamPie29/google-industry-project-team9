@@ -1,39 +1,30 @@
-import "./Homepage.scss"
+import "./Homepage3.scss"
 import Sidebar from "../../components/Sidebar/Sidebar"
+import SuggestionBar from "../../components/SuggestionBar/SuggestionBar";
 import VideoLibrary from "../../components/VideoLibrary/VideoLibrary"
 import { useState, useEffect } from 'react';
 import axios from "axios";
-import FirstModal from "../../components/FirstModal/FirstModal";
+import Menu from "../../components/Menu/Menu";
 
 
-function Homepage() {
+function Homepage3() {
 
-  const [show, setShow] = useState(false);
   const [videoData, setVideoData] = useState([]);
-
-  useEffect(()=> {
-
+  
+  useEffect(() => {
     axios.get(`http://localhost:8080/videos`)
-    .catch((error)=> {
-      console.log(error)
-    })
-    .then((response)=> {
-      setVideoData(response.data);
-    });
+      .catch((error) => {
+        console.log(error)
+      })
+      .then((response) => {
+        setVideoData(response.data);
+      });
   }, []);
-
-  // const handleClick = (status) => {
-  //   setShow(status)
-  // }
-
-  // const close = () => {
-  //   setShow(false)
-  // }
 
   return (
     
     <main className="homepage">
-      <FirstModal />
+      <Menu />
       <Sidebar />
       <div>
         <SuggestionBar />
@@ -42,4 +33,4 @@ function Homepage() {
     </main>
   )
 }
-export default Homepage;
+export default Homepage3;

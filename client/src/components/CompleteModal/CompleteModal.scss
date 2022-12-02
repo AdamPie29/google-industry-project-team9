@@ -1,0 +1,28 @@
+.completemodal__img {
+    position: fixed;
+    z-index: 6;
+    left:14%;
+    top: 18%;
+}
+
+.overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    backdrop-filter: blur(6px);
+    background: rgba(0, 0, 0, 0.047);
+}
+
+.progress5 {
+    position: fixed;
+    z-index: 7;
+    top: 22%;
+    left: 30%;
+}
+

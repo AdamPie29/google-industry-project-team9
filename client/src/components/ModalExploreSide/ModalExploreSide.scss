@@ -1,0 +1,10 @@
+.overlay {
+    display: none;
+}
+
+.search-modal {
+    z-index: 2;
+    position: fixed;
+    left: 40%;
+    top: 50%;
+}

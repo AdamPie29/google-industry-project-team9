@@ -16,6 +16,12 @@ function SuggestionBar() {
                 <p className='suggestion-bar__content'>Movies</p>
             </div>
             <div className='suggestion-bar__container'>
+                <p className='suggestion-bar__content'>Sleeping</p>
+            </div>
+            <div className='suggestion-bar__container'>
+                <p className='suggestion-bar__content'>ASMR</p>
+            </div>
+            <div className='suggestion-bar__container'>
                 <p className='suggestion-bar__content'>History</p>
             </div>
             <div className='suggestion-bar__container'>
