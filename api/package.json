@@ -1,5 +1,5 @@
 {
-  "name": "adam-pietrangelo-brainflix-api",
+  "name": "google-industry-project-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,6 +13,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "router": "^1.3.7",
     "uuid": "^9.0.0"
   }
 }
