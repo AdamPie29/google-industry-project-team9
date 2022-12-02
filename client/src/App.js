@@ -1,6 +1,7 @@
 import './App.scss';
 import Homepage from '../src/pages/Homepage/Homepage.js'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import Navbar from './components/Navbar/Navbar';
 import Homepage1 from './pages/Homepage1/Hompage1';
 import Homepage2 from './pages/Homepage2/Homepage2';
@@ -11,10 +12,11 @@ import Homepage6 from './pages/Homepage6/Homepage6';
 import Homepage7 from './pages/Homepage7/Homepage7';
 import Homepage8 from './pages/Homepage8/Homepage8';
 
+
+
 function App() {
   return (
     <div className="app">
-      <Navbar />
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<Homepage/>} />
@@ -28,7 +30,7 @@ function App() {
         <Route path="/home8" element={<Homepage8 />} />
       </Routes>
       </BrowserRouter>
-    </div> 
+    </div>
   );
 }
 
