@@ -1,0 +1,54 @@
+.grow { 
+    transition: all .2s ease-in-out; 
+    }
+    
+    .grow:hover { 
+    transform: scale(1.1); 
+    }
+
+.video-single {
+    max-width: min-content;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 1rem;
+        margin-top: 0.75rem;
+    }
+
+    &__item-thumbnail {
+        width: 20rem;
+        border-radius: 15px;
+        box-shadow: 4px solid green;
+        margin-bottom: 0.5rem;
+    }
+
+    &__item-info {
+        display: flex;
+        flex-direction: row;
+
+        &-placeholder {
+            border-radius: 50%;
+            width: 2rem;
+            height: 2rem;
+            object-fit: cover;
+        }
+
+        &-vid {
+            display: flex;
+            flex-direction: column;
+            padding-left: 1rem;
+
+            &-title {
+                margin: 0rem;
+                font-weight: 600;
+                padding-bottom: 0.5rem;
+            }
+
+            &-channel {
+                margin: 0rem;
+                color: #aaa;
+            }
+        }
+    }
+}
