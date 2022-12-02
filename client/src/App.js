@@ -4,14 +4,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
-    // <div className="app">
-    //   <p>Test</p>
-    // </div>
-    <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<Homepage/>}/>
-    </Routes>
-    </BrowserRouter>
+    <div className="app">
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Homepage/>}/>
+      </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
