@@ -1,10 +1,11 @@
 import './SuggestionBar.scss'
+import leftChevron from '../../assets/images/arrow-25-48.png'
 
 function SuggestionBar() {
     return(
         <div className='suggestion-bar'>
-            <div className='suggestion-bar__container'>
-                <p className='suggestion-bar__content'>All</p>
+            <div className='suggestion-bar__container--all'>
+                <p className='suggestion-bar__content--all'>All</p>
             </div>
             <div className='suggestion-bar__container'>
                 <p className='suggestion-bar__content'>Music</p>
@@ -27,12 +28,13 @@ function SuggestionBar() {
             <div className='suggestion-bar__container'>
                 <p className='suggestion-bar__content'>Watched</p>
             </div>
-            <div>
+            <div className='suggestion-bar__container'>
                 <p className='suggestion-bar__content'>New to you</p>
             </div>
             <div className='suggestion-bar__container'>
                 <p className='suggestion-bar__content'>Recently Upload</p>
             </div>
+            <img className='suggestion-bar__chevron'src={leftChevron}/>
         </div>
     )
 }
