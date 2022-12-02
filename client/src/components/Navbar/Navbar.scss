@@ -1,0 +1,71 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+
+    &__left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 1rem;
+    }
+
+    &__menu {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    &__play {
+        width: 6rem;
+    }
+
+    &__youtube {
+        font-weight: 700;
+        margin-right: 20%;
+    }
+
+    &__search {
+        border-radius: 25px;
+        border: 0.5px solid grey;
+        background-color: rgb(14, 14, 14);
+        width: 30rem;
+        height: 2rem;
+        padding: 0.25rem;
+        padding-left: 0.75rem;
+        color: grey;
+        margin-left: 25rem;
+        ::placeholder {
+            font-weight: 400;
+            color: grey;
+        }
+    }
+
+    &__mic {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &__cam {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &__bell {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &__usericon {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__right {
+        margin-left: 20%;
+        width: 10rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
